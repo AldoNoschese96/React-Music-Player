@@ -1,0 +1,32 @@
+@import "./player";
+@import "./song";
+@import "./library";
+@import "./nav";
+@import "./variables";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+h1,
+h2,
+h3 {
+  color: var(--color-dark);
+}
+body {
+  background-color: var(--color-white);
+}
+
+.App {
+  transition: all 0.5s ease;
+}
+.library-active {
+  margin-left: 30%;
+}
+
+h3,
+h4 {
+  font-weight: 400;
+  color: var(--color-dark);
+}

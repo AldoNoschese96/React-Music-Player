@@ -1,0 +1,55 @@
+nav {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .checkTheme {
+    display: flex;
+    align-items: center;
+    label {
+      color: var(--color-dark);
+      display: none;
+    }
+    input {
+      position: absolute;
+      opacity: 1;
+      cursor: pointer;
+      height: 10;
+      width: 10;
+      background: red;
+    }
+  }
+
+  h1 {
+    color: var(--color-dark);
+  }
+
+  button {
+    background: transparent;
+    border: 2px solid var(--color-dark);
+    padding: 0.5rem;
+    transition: all 0.5 ease;
+    cursor: pointer;
+    outline: none;
+    color: var(--color-dark);
+    &:hover {
+      background: var(--color-dark);
+      color: var(--color-white);
+      svg {
+        color: var(--color-white);
+      }
+    }
+  }
+}
+svg {
+  cursor: pointer;
+  color: var(--color-dark);
+}
+@media screen and (max-width: 768px) {
+  nav {
+    button {
+      z-index: 10;
+    }
+  }
+}
